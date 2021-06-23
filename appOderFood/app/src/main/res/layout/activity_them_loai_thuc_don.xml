@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/edtTenLoaiThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/tenloaithucdon"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnThemLoaiThucDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dongy" />
+</LinearLayout>

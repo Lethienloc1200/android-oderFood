@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".DangKyActivity"
+    android:background="#00e676">
+
+
+    <TextView
+        android:id="@+id/txtTieuDeDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/dangky"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lnKhungDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="@string/nhapvaoten"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"/>
+
+
+
+        <EditText
+            android:id="@+id/edtPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/nhapvaopass"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nam"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nữ" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinQuyen"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="#8BFFFAFA">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/calender"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/birthday"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/dangky" />
+
+            <Button
+                android:id="@+id/btnThoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/thoat" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
